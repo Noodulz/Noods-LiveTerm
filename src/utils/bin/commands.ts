@@ -14,11 +14,10 @@ export const help = async (args: string[]): Promise<string> => {
       c += Object.keys(bin).sort()[i - 1] + ' ';
     }
   }
-  return `Welcome! Here are all the available commands:
+  return `Available commands:
 \n${c}\n
 [tab]: trigger completion.
-[ctrl+l]/clear: clear terminal.\n
-Type 'sumfetch' to display summary.
+[ctrl+l]/clear: clear terminal.
 `;
 };
 
@@ -30,26 +29,20 @@ export const repo = async (args: string[]): Promise<string> => {
 
 // About
 export const about = async (args: string[]): Promise<string> => {
-  return `Hi, I am ${config.name}. 
-Welcome to my website!
+  return `Hi hi! I am ${config.name}. 
+Welcome to my website! This terminal was forked and made courtesy of cveinnt.
+
+I am a front-end and software developer currently working on some mobile and ML projects.
+My hobbies include watching films, exploring new cities, reading, writing poetry, and playing video games!
+
 More about me:
 'sumfetch' - short summary.
-'resume' - my latest resume.
-'readme' - my github readme.`;
+'resume' - my latest resume.`;
 };
 
 export const resume = async (args: string[]): Promise<string> => {
   window.open(`${config.resume_url}`);
   return 'Opening resume...';
-};
-
-// Donate
-export const donate = async (args: string[]): Promise<string> => {
-  return `thank you for your interest. 
-here are the ways you can support my work:
-- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.paypal}" target="_blank">paypal</a></u>
-- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.patreon}" target="_blank">patreon</a></u>
-`;
 };
 
 // Contact
@@ -70,25 +63,9 @@ export const linkedin = async (args: string[]): Promise<string> => {
   return 'Opening linkedin...';
 };
 
-// Search
-export const google = async (args: string[]): Promise<string> => {
-  window.open(`https://google.com/search?q=${args.join(' ')}`);
-  return `Searching google for ${args.join(' ')}...`;
-};
-
 export const duckduckgo = async (args: string[]): Promise<string> => {
   window.open(`https://duckduckgo.com/?q=${args.join(' ')}`);
   return `Searching duckduckgo for ${args.join(' ')}...`;
-};
-
-export const bing = async (args: string[]): Promise<string> => {
-  window.open(`https://bing.com/search?q=${args.join(' ')}`);
-  return `Wow, really? You are using bing for ${args.join(' ')}?`;
-};
-
-export const reddit = async (args: string[]): Promise<string> => {
-  window.open(`https://www.reddit.com/search/?q=${args.join(' ')}`);
-  return `Searching reddit for ${args.join(' ')}...`;
 };
 
 // Typical linux commands
@@ -106,11 +83,6 @@ bunch
 of
 fake
 directories`;
-};
-
-export const cd = async (args: string[]): Promise<string> => {
-  return `unfortunately, i cannot afford more directories.
-if you want to help, you can type 'donate'.`;
 };
 
 export const date = async (args: string[]): Promise<string> => {
@@ -133,22 +105,19 @@ export const emacs = async (args?: string[]): Promise<string> => {
   return `you know what? just use vscode.`;
 };
 
-export const sudo = async (args?: string[]): Promise<string> => {
-  window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank'); // ...I'm sorry
-  return `Permission denied: with little power comes... no responsibility? `;
-};
-
 // Banner
 export const banner = (args?: string[]): string => {
-  return `
-█████        ███                       ███████████                                   
-░░███        ░░░                       ░█░░░███░░░█                                   
- ░███        ████  █████ █████  ██████ ░   ░███  ░   ██████  ████████  █████████████  
- ░███       ░░███ ░░███ ░░███  ███░░███    ░███     ███░░███░░███░░███░░███░░███░░███ 
- ░███        ░███  ░███  ░███ ░███████     ░███    ░███████  ░███ ░░░  ░███ ░███ ░███ 
- ░███      █ ░███  ░░███ ███  ░███░░░      ░███    ░███░░░   ░███      ░███ ░███ ░███ 
- ███████████ █████  ░░█████   ░░██████     █████   ░░██████  █████     █████░███ █████
-░░░░░░░░░░░ ░░░░░    ░░░░░     ░░░░░░     ░░░░░     ░░░░░░  ░░░░░     ░░░░░ ░░░ ░░░░░ 
+  return `Welcome to
+
+ ██████   █████    ███████       ███████    ██████████   █████  █████ █████       ███████████
+░░██████ ░░███   ███░░░░░███   ███░░░░░███ ░░███░░░░███ ░░███  ░░███ ░░███       ░█░░░░░░███ 
+ ░███░███ ░███  ███     ░░███ ███     ░░███ ░███   ░░███ ░███   ░███  ░███       ░     ███░  
+ ░███░░███░███ ░███      ░███░███      ░███ ░███    ░███ ░███   ░███  ░███            ███    
+ ░███ ░░██████ ░███      ░███░███      ░███ ░███    ░███ ░███   ░███  ░███           ███     
+ ░███  ░░█████ ░░███     ███ ░░███     ███  ░███    ███  ░███   ░███  ░███      █  ████     █
+ █████  ░░█████ ░░░███████░   ░░░███████░   ██████████   ░░████████   ███████████ ███████████
+░░░░░    ░░░░░    ░░░░░░░       ░░░░░░░    ░░░░░░░░░░     ░░░░░░░░   ░░░░░░░░░░░ ░░░░░░░░░░░ 
+
 
 Type 'help' to see the list of available commands.
 Type 'sumfetch' to display summary.

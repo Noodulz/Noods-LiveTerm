@@ -1,39 +1,35 @@
 {
-  "readmeUrl": "https://raw.githubusercontent.com/cveinnt/cveinnt/master/README.md",
-  "title": "LiveTerm",
-  "name": "John Doe",
-  "ascii": "liveterm",
+  "readmeUrl": "https://raw.githubusercontent.com/noodulz/noodulz/master/README.md",
+  "title": "Noodulz",
+  "name": "Jocelyn Dzuong",
+  "ascii": "Noodulz",
   "social": {
-    "github": "github",
-    "linkedin": "linkedin"
+    "github": "noodulz",
+    "linkedin": "jdzng04"
   },
-  "email": "contact@email.com",
-  "ps1_hostname": "liveterm",
+  "email": "jocelyndzuong04@gmail.com",
+  "ps1_hostname": "noodulz",
   "ps1_username": "visitor",
-  "repo": "https://github.com/Cveinnt/LiveTerm",
-  "resume_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Resume.pdf",
-  "donate_urls": {
-    "paypal": "https://paypal.me/cveinnt",
-    "patreon": "https://patreon.com/cveinnt"
-  },
+  "repo": "https://github.com/Noodulz",
+  "resume_url": "https://jdzng-resume.tiiny.site/",
   "colors": {
     "light": {
-      "background": "#FBF1C9",
-      "foreground": "#3C3836",
-      "yellow": "#D79921",
-      "green": "#98971A",
-      "gray": "#7C6F64",
-      "blue": "#458588",
-      "red": "#CA2124"
+      "background": "#3F3F3F",
+      "foreground": "#DCDCCC",
+      "yellow": "#E0CF9F",
+      "green": "#5F7F5F",
+      "gray": "#4F4F4F",
+      "blue": "#7CB8BB",
+      "red": "#DCA3A3"
     },
     "dark": {
-      "background": "#2E3440",
-      "foreground": "#E5E9F0",
-      "yellow": "#5E81AC",
-      "green": "#A3BE8C",
-      "gray": "#88C0D0",
-      "blue": "#EBCB8B",
-      "red": "#BF616A"
+      "background": "#292A44",
+      "foreground": "#F1EFF8",
+      "yellow": "#AE81FF",
+      "green": "#6DFEDF",
+      "gray": "#F1EFF8",
+      "blue": "#2DE0A7",
+      "red": "#A0A0C5"
     }
   }
 }
